@@ -1,0 +1,284 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 30px;
+    line-height: 1.6;
+    color: rgb(156, 83, 83);
+}
+
+*,
+*:before,
+*:after { 
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 { 
+    margin: 0;
+}
+/*container*/
+.container {
+width: 100%;
+max-width: 1200px;
+margin-left: auto;
+}
+
+/*intro*/
+.intro { 
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-top: 10%;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/intro.jpg.png") center no-repeat;
+    background-size: cover;
+}
+
+.intro__title{ 
+    color: white;
+    border: 9px;
+    font-size:140px;
+    margin: 50;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.intro__subtitle{
+font-size: 20px;
+color: white;
+font-family:'Montserrat', sans-serif;
+}
+
+/*header*/
+.header{
+width: 100%;
+padding-top: 20px;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+}
+
+.header__inner { 
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.header__logo{ 
+font-size: 25px;
+font-weight:900;
+color:black;
+}
+
+/*nav*/
+.nav {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    position: relative;
+    color: black;
+    text-decoration: none;
+
+    transition: color .2s linear;
+}
+.nav__link:after{
+content: "";
+display: block;
+width: 100%;
+height: 3px;
+display: none;
+
+background-color: white;
+
+position: absolute;
+top: 100%;
+left: 0;
+z-index: 1;
+}
+.nav__link:hover{ 
+color: white;
+}
+
+.nav__link:hover:after{
+display: block;
+}
+
+/*Button*/
+.btn{
+    margin: 60px auto 60px;
+display: inline-block;
+vertical-align: top;
+padding: 8px 30px;
+background-color: aqua;
+font-size: 16px;
+font-weight: 1000;
+color: black;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+.btn:hover {
+    background-color:white;
+}
+
+/*Section*/
+.section {
+padding: 80px 0;
+}
+
+.section__header {
+width: 100%;
+margin: 0 auto;
+max-width: 1000px;
+text-align: center;
+}
+
+
+
+.section__subtitle{
+    font-family:'Montserrat';
+    font-size: 27px;
+    color: black;
+}
+
+.section__text{
+color: black;
+font-size: 19px;
+font-family: sans-serif;
+}
+
+/*sel*/
+
+.sel{
+background-color: aqua;
+}
+.sel__header{
+width: 100%;
+margin: 0 auto;
+max-width: 1000px;
+text-align: center;
+}
+
+.sel__subtitle{
+    font-family:'Montserrat';
+    padding-top: 80px;
+    font-size: 27px;
+    color: black;
+    text-align: center;
+}
+
+/*about*/
+
+.about{
+display: flex;
+justify-content: space-between;
+}
+
+.about__item{
+width: 30%;
+}
+
+.about__img{
+    padding-top: 80px;
+text-align: center;
+}
+
+/*podpici*/
+.pod{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+/*knopa*/
+.kn{
+    position: relative;
+    left: 130px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto 70px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1px 60px;
+    background-color: rgb(218, 211, 26);
+    font-size: 16px;
+    font-weight: 1000;
+    color: black;
+    text-decoration: none;
+}
+.kn:hover {
+    background-color:white;
+}
+
+.kno{
+    position: relative;
+    left: 960px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto 70px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1px 60px;
+    background-color: rgb(218, 211, 26);
+    font-size: 16px;
+    font-weight: 1000;
+    color: black;
+    text-decoration: none;
+}
+.kno:hover {
+    background-color:white;
+}
+.knop{
+    position: relative;
+    left: 260px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto 70px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1px 60px;
+    background-color: rgb(218, 211, 26);
+    font-size: 16px;
+    font-weight: 1000;
+    color: black;
+    text-decoration: none;
+}
+.knop:hover {
+    background-color:white;
+}
+
+.section__subtitle1{
+    padding-top: 100px;
+font-size: 20px;
+color: black;
+font-family:'Montserrat';
+}
+.section__text1{
+    font-size: 20px;
+    color: black;
+    font-family:'Montserrat';
+}
+/*toro*/
+.toro__img{
+    display: block;
+    margin-left: auto;
+    position: relative;
+  top:-160px;
+}
+
+.toro{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-top: 10%;
+    width: 100%;
+    height: 50vh;
+    background: url("../images/toro/toro1.jpg") center no-repeat;
+    background-size: cover;
+}
